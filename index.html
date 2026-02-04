@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikhil | GitHub Repositories</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: #3a0d12; /* matte maroon */
+        color: #f5f5f5;
+        min-height: 100vh;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 20px 20px;
+    }
+
+    header h1 {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+
+    header p {
+        margin-top: 8px;
+        opacity: 0.8;
+    }
+
+    .search-container {
+        display: flex;
+        justify-content: center;
+        margin: 25px 20px;
+    }
+
+    #searchInput {
+        width: 100%;
+        max-width: 420px;
+        padding: 14px 18px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        background: rgba(255, 255, 255, 0.12);
+        color: #fff;
+    }
+
+    #searchInput::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    #searchInput:focus {
+        box-shadow: 0 0 0 2px rgba(255, 179, 179, 0.5);
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px 20px;
+    }
+
+    .repo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+    }
+
+    .repo-card {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 14px;
+        padding: 20px;
+        border: 1px solid rgba(255,255,255,0.15);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .repo-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.45);
+    }
+
+    .repo-card a {
+        color: #ffb3b3;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.05rem;
+        word-break: break-word;
+    }
+
+    .language {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        background: rgba(255, 179, 179, 0.15);
+        border: 1px solid rgba(255,179,179,0.4);
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        margin-top: 40px;
+        font-size: 0.9rem;
+        opacity: 0.7;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Nikhil's GitHub Repositories</h1>
+    <p>Public Repositories</p>
+</header>
+
+<div class="search-container">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search repositories or languages..."
+        onkeyup="searchRepos()"
+    />
+</div>
+
+<div class="container">
+<div class="repo-grid">
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/.Net-training">.Net-training</a>
+        <div class="language">C# • .NET</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/Testing">Testing</a>
+        <div class="language">C# • Unit Testing</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/MsSQL-Training">MsSQL-Training</a>
+        <div class="language">SQL</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/TopBrains-Questions">TopBrains-Questions</a>
+        <div class="language">C#</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/LearnCSharp">LearnCSharp</a>
+        <div class="language">C#</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/Assessment-3">Assessment-3</a>
+        <div class="language">C#</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/Week2-Assessment">Week2-Assessment</a>
+        <div class="language">C#</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/Assessment-1">Assessment-1</a>
+        <div class="language">C#</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/Library-Management-System">Library-Management-System</a>
+        <div class="language">C# • OOP</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/DeepCSharp">DeepCSharp</a>
+        <div class="language">C# (Advanced)</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/kasparro-agentic-fb-analyst-Nikhil">
+            kasparro-agentic-fb-analyst-Nikhil
+        </a>
+        <div class="language">Python • LLM</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/PDF-Summarizer">PDF-Summarizer</a>
+        <div class="language">Python • NLP</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/hiring-agent">hiring-agent</a>
+        <div class="language">Python • AI</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/Earthquake-Tracker">Earthquake-Tracker</a>
+        <div class="language">Python • Visualization</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/Netflix-Data-Analysis-With-Tableau">
+            Netflix-Data-Analysis-With-Tableau
+        </a>
+        <div class="language">Tableau • SQL</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/Customer-Segment-Analysis-">
+            Customer-Segment-Analysis
+        </a>
+        <div class="language">Python • ML</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/Dynamic-Weather-Forecast-Visualisation">
+            Dynamic-Weather-Forecast-Visualisation
+        </a>
+        <div class="language">Python • API • Visualization</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/Bank-Churn-record-Analysis-with-Excel">
+            Bank-Churn-record-Analysis-with-Excel
+        </a>
+        <div class="language">Excel • Data Analytics</div>
+    </div>
+
+    <div class="repo-card">
+        <a href="https://github.com/Nikohoma/Global-Superstore-Data-Analysis-with-R">
+            Global-Superstore-Data-Analysis-with-R
+        </a>
+        <div class="language">R • Data Analytics</div>
+    </div>
+
+</div>
+</div>
+
+<footer>
+    © 2026 • Built by Nikhil
+</footer>
+
+<script>
+function searchRepos() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const cards = document.querySelectorAll(".repo-card");
+
+    cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(input) ? "block" : "none";
+    });
+}
+</script>
+
+</body>
+</html>
